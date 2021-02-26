@@ -10,17 +10,17 @@
         <h1>Sign Up Page</h1>
         <form method ="POST">
             <label for="fName">First Name:</label><br>
-            <input type="text" id="fName" name="fName"> <br>
+            <input type="text" id="fName" name="fName" required><br>
             <label for="lName">Last Name:</label><br>
-            <input type="text" id="lName" name="lName"><br>
+            <input type="text" id="lName" name="lName" required><br>
             <label for="txtUsername">Username:</label><br>
-            <input type="text" id="txtUsername" name="txtUsername"><br>
+            <input type="text" id="txtUsername" name="txtUsername" required><br>
             <label for="emailUser">Email Address:</label><br>
-            <input type="email" id="emailUser" name="emailUser"><br>
+            <input type="email" id="emailUser" name="emailUser" required><br>
             <label for="txtPassword">Password:</label><br>
-            <input type="password" id="txtPassword" name="txtPassword"><br>
+            <input type="password" id="txtPassword" name="txtPassword" required><br>
             <label for="txtPasswordMatch">Confirm Password:</label><br>
-            <input type="password" id="txtPasswordMatch" name="txtPasswordMatch"><br>
+            <input type="password" id="txtPasswordMatch" name="txtPasswordMatch" required><br>
             <label for="txtgender">Gender:</label><br>
             <input type="radio" id="rbMale" name="gender" value="male">
             <label for="male">Male</label><br>
@@ -33,15 +33,21 @@
             <label for="txtLoc">Location:</label><br>
             <input type="text" id="txtLoc" name="txtLoc"><br>
             <label for="dateDOB">Date-of-birth:</label><br>
-            <input type="date" id="dateDOB" name="dateDOB"><br>
-            <label for="txtSecQ">Security Question</label><br>
-            <!--Combo box with at least 3 security questions-->
-            <input type="text" id="txtSecQ" name="txtSecQ"><br>
+            <input type="date" id="dateDOB" name="dateDOB" required><br>
+            <label for="dlSecQ">Security Question</label><br>
+            <select id="dlSecQ" name="dlSecQ" required>
+                <option disabled hidden selected value></option>
+                <option value="mMaidenName">What is your mother's maiden name?</option>
+                <option value="firstPet">What was the name of your first pet?</option>
+                <option value="highSchool">What high school did you graduate from?</option>
+                <option value="childPhone">What were the last four digits of your childhood telephone number?</option>
+            </select><br>
+            <input type="text" id="txtSecQ" name="txtSecQ" required><br>
             <label for="txtBio">Bio:</label><br>
-            <input type="text" id="txtBio" name="txtBio"><br>
+            <textarea id="txtBio" name=txtBio></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
     </header>
 </body>
 </html>
