@@ -19,12 +19,20 @@
             <label for="txtLUsername">Username:</label><br>
             <input type="text" id="txtLUsername" name="txtLUsername" required><br>
             -->
-            <label for="emailLEmail">Email:</label><br>
-            <input type="email" id="emailLEmail" name="txtLEmail" required><br>
-            <label for="txtLPassword">Password:</label><br>
-            <input type="password" id="txtLPassword" name="txtLPassword" required><br>
-            <input type="submit" value="Login">
-            <input type="reset" value="Cancel"><br>
+            <label for="txtEmail" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" id="txtEmail" name="txtEmail" required class="form-control"
+                                placeholder="email@example.com" />
+                        </div>
+                            <label for="txtPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                            <input type="password" id="txtLPassword" name="txtLPassword" placeholder="Password" class="form-control" >
+                        </div>
+                        </div>
+            <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
             <label for="cbRemember">Remember Me:</label>
             <input type="checkbox" id="cbRemember" name="cbRemember" value="remember"><br>
         </form>
@@ -35,7 +43,6 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contactus.html">Contact Us</a><br>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 </body>
 

@@ -16,14 +16,38 @@
     </header>
     <section class="content">
         <form method="POST">
-            <label for="txtFName">First Name:</label><br>
-            <input type="text" id="txtFName" name="txtFName" required><br>
-            <label for="txtLName">Last Name:</label><br>
-            <input type="text" id="txtLName" name="txtLName" required><br>
-            <label for="txtSUsername">Username:</label><br>
-            <input type="text" id="txtSUsername" name="txtSUsername" required><br>
-            <label for="emailSUser">Email Address:</label><br>
-            <input type="email" id="emailSUser" name="emailSUser" required><br>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label for="txttFName" class="col-form-label">First Name:</label>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" id="txtFName" name="txtFName" required class="form-control"
+                        placeholder="First Name" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label for="txtLName" class="col-form-label">Last Name:</label>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" id="txtLName" name="txtLName" required class="form-control"
+                        placeholder="Last Name" />
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="txtSUsername" class="col-sm-3 col-form-label">Username:</label>
+                <div class="col-sm-9">
+                    <input type="text" id="txtSUsername" name="txtSUsername" required class="form-control" 
+                    placeholder="Username">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="emailSUser" class="col-sm-3 col-form-label">Email Address:</label>
+                <div class="col-sm-9">
+                <input type="email" id="emailSUser" name="emailSUser" required class="form-control"
+                     placeholder="email@example.com">
+                </div>
+            </div>
             <label for="txtSPassword">Password:</label><br>
             <input type="password" id="txtSPassword" name="txtSPassword" required><br>
             <label for="txtSPasswordMatch">Confirm Password:</label><br>
@@ -61,7 +85,6 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contactus.html">Contact Us</a><br>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 
 </body>
