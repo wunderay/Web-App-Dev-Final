@@ -97,22 +97,33 @@
                     <input type="text" id="txtLoc" name="txtLoc" class="form-control">
                 </div>
             </div>
-
-            <label for="dateDOB">Date-of-birth:</label><br>
-            <input type="date" id="dateDOB" name="dateDOB" required><br>
-            <label for="dlSecQ">Security Question</label><br>
-            <select id="dlSecQ" name="dlSecQ" required>
-                <option disabled hidden selected value></option>
-                <option value="mMaidenName">What is your mother's maiden name?</option>
-                <option value="firstPet">What was the name of your first pet?</option>
-                <option value="highSchool">What high school did you graduate from?</option>
-                <option value="childPhone">What were the last four digits of your childhood telephone number?</option>
-            </select><br>
-            <input type="text" id="txtSecQ" name="txtSecQ" required><br>
+            <div class="row form-group">
+                <label for="txtDoB" class="col-sm-3 col-form-label">Date of birth:</label>
+                <div class="col-sm-9">
+                    <input type="date" id="txtDoB" name="txtDoB" class="form-control" />
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="dlSecQ" class="col-sm-3 col-form-label">Security Question</label>
+                <div class="col-sm-9">
+                    <select id="dlSecQ" name="dlSecQ" required class="form-control">
+                        <option disabled hidden selected value></option>
+                        <option value="mMaidenName">What is your mother's maiden name?</option>
+                        <option value="firstPet">What was the name of your first pet?</option>
+                        <option value="highSchool">What high school did you graduate from?</option>
+                        <option value="childPhone">What were the last four digits of your childhood telephone number?</option>
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" id="txtSecQ" name="txtSecQ" required class="form-control">
+                </div>
+            </div>
             <label for="txtBio">Bio:</label><br>
             <textarea id="txtBio" name=txtBio></textarea><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
         </form>
     </section>
     <footer>
