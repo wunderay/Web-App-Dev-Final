@@ -12,9 +12,9 @@ Technologies Used: HTML5, CSS3, Bootstrap
 - Sign in
     The HTML was done by Joe and Raymond modified it to incorporate Bootstrap
 - Sign Up
-    The HTML was done by Joe and Raymond modified the tags added divs to use Bootstrap.
+    The HTML was done by Joe and Raymond modified the tags and added divs to use Bootstrap.
 - Home
-    Raymond wrote most of the HTML and styling for this page. Joe did work on the header  and second post. The footer was done by Raymond
+    Raymond wrote most of the HTML and styling for this page. Joe did work on the header and second post. The footer was done by Raymond.
 - styles.css
   Most of the CSS was written by Raymond though a few were written by Joe.
 - All other pages were done by Joe.
