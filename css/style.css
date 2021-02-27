@@ -14,11 +14,20 @@ header{
     max-width: 554px;
     height: auto;
 }
-#logo>img{
+#logo{
   position: relative;
   max-width: 50px;
   height: auto;
-  clear: left;
+  float: left;
+}
+#blank{
+  max-width: 50px;
+  height: auto;
+  float: right;
+  /*background-color: black;*/
+}
+#title{
+font-size: 50px
 }
 body{
     background-color: rgb(153, 214, 255);
