@@ -5,8 +5,30 @@ section, header, img {
 }
 
 body{
-    background-color: lightblue;
+    background-color: rgb(12, 139, 182);
+}
+aside{
+    margin-left: -25%;
+}
+article{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    border-color: darkblue;
 }
 .btn-primary{
-    background-color: green;
+    background-color: blue;
+    padding-left: auto;
+    padding-right: auto;
 }
+.intBar{
+    padding: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content:space-evenly;
+}
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
