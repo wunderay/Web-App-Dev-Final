@@ -28,7 +28,7 @@ article{
     border-color: darkblue;
     border-style: solid;
     background-color: #66C2FF;
-    z-index: 2;
+    z-index: 1;
 }
 .content{
     background-color: #66C2FF;
@@ -63,13 +63,14 @@ footer{
 }
 /*Copied below from w3 schools https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp*/
 .sidenav {
+    display:block;
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 0; /* Stay on top */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     float:left;
-    left: 30%;
+    left: 0%;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     background-color: #66C2FF;
@@ -92,18 +93,20 @@ footer{
 /*https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .sidebar {
+    .sidenav {
       width: 100%;
       height: auto;
       position: relative;
     }
     .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+    .content {margin-left: 0;
+            margin-top: 20px;
+                margin-top: auto;}
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
-    .sidebar a {
+    .sidenav a {
       text-align: center;
       float: none;
     }
