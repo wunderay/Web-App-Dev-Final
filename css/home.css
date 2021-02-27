@@ -1,9 +1,18 @@
-section, header, img {
+*{
+    box-sizing: border-box;
+}
+section, header {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
 }
-
+header{
+    text-align: center;
+}
+img{
+    max-width: 574px;
+    height: auto;
+}
 body{
     background-color: rgb(12, 139, 182);
 }
@@ -13,8 +22,10 @@ aside{
 article{
     margin-top: auto;
     margin-bottom: auto;
+    padding: 10px;
     border-radius: 5px;
     border-color: darkblue;
+    border-style: solid;
 }
 .btn-primary{
     background-color: blue;
@@ -32,3 +43,6 @@ article{
     align-items: center;
     justify-content: center;
   }
+Username{
+    font:bold;
+}
