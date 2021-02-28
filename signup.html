@@ -12,16 +12,16 @@
 <body>
     
     <header>
-        <img id="logo" src="/img/rumor.png">
+        <img id="logo" src="/img/rumor.png" alt="Chattr logo">
         <span id="title">Chattr</span>
-        <img id="blank" src="/img/blank.png"><br>
+        <img id="blank" src="/img/blank.png" alt=""><br>
         <h3>Sign Up</h3>
     </header>
     <section class="content">
         <form method="POST">
             <div class="form-group row">
                 <div class="col-sm-3">
-                    <label for="txttFName" class="col-form-label">First Name:</label>
+                    <label for="txtFName" class="col-form-label">First Name:</label>
                 </div>
                 <div class="col-sm-9">
                     <input type="text" id="txtFName" name="txtFName" required class="form-control"
@@ -67,27 +67,31 @@
             </div>
 
             <div class="row">
-                <label for="txtgender" class="col-sm-2 col-form-label">Gender:</label>
+                <span class="col-sm-2 col-form-label">Gender:</span>
                 <div class="col-sm-10">
                     <div class="form-check">
                         <input type="radio" id="rbMale" name="gender" value="male"
                             class="form-check-input" />
-                        <label for="rbMale" class="form-check-label">Male</label>
+                            <label for="rbMale" class="form-check-label">Male</label>
+
                     </div>
                     <div class="form-check">
                         <input type="radio" id="rbFemale" name="gender" value="female"
                             class="form-check-input" />
-                        <label for="rbFemale" class="form-check-label">Female</label>
+                            <label for="rbFemale" class="form-check-label">Female</label>
+
                     </div>
-                    <div class="form-check">
+                    <div class="form-check">                        
                         <input type="radio" id="rbOther" name="gender" value="other"
                             class="form-check-input" />
-                        <label for="rbOther" class="form-check-label">Other</label>
+                            <label for="rbOther" class="form-check-label">Other</label>
+
                     </div>
                     <div class="form-check">
                         <input type="radio" id="rbNoAnswer" name="gender" value="noAnswer"
                             class="form-check-input" />
-                        <label for="rbNoAnswer" class="form-check-label">Prefer not to answer</label>
+                         <label for="rbNoAnswer" class="form-check-label">Prefer not to answer</label>
+
                     </div>
                 </div>
             </div>
@@ -108,7 +112,7 @@
                 <label for="dlSecQ" class="col-sm-3 col-form-label">Security Question</label>
                 <div class="col-sm-9">
                     <select id="dlSecQ" name="dlSecQ" required class="form-control">
-                        <option disabled hidden selected value></option>
+                        <option value="">Choose</option>
                         <option value="mMaidenName">What is your mother's maiden name?</option>
                         <option value="firstPet">What was the name of your first pet?</option>
                         <option value="highSchool">What high school did you graduate from?</option>
