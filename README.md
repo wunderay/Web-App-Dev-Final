@@ -8,7 +8,7 @@ is placeholder. This includes posts and certain links.
 
 Technologies Used: HTML5, CSS3, Bootstrap
 
-## Division of labor
+## Division of Labor for Assignment 1
 - Sign in
     The HTML was done by Joe and Raymond modified it to incorporate Bootstrap
 - Sign Up
@@ -20,3 +20,13 @@ Technologies Used: HTML5, CSS3, Bootstrap
 - All other pages were done by Joe.
 
 We decided to just use bootstrap because that was what we were familiar with.
+
+## Division of Labor for Assignment 2
+- Part 1\
+This part was solely done by Raymond Wu.
+- Part 2\
+This part was done by Joe
+There was some bugs present in the final code. 
+The red background styling would not apply to the password windows when it came
+from the passwords not matching or not having all the required character types.
+The appearing security question was implemented by Raymond Wu. But it doesn't seem to work.

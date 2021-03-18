@@ -2,46 +2,51 @@ function validateForm(){
     var pw = document.querySelector("#txtSPassword");
     var pw2 = document.querySelector("#txtSPasswordMatch");
     var divPWError = document.querySelector("#divPasswordError");
+    var divPW2Error = document.querySelector("#divPassword2Error");
     var formIsValid = true;
-    if(pw !== pw2){
+    if(pw.value !== pw2.value){
         /* Show Error and Change Style of confirmpassword field */
-        divPWError.classList.remove("invisible");
-        divPWError.innerHTML = "Passwords do not match.";
+        divPW2Error.classList.remove("invisible");
+        divPW2Error.innerHTML = "Passwords do not match.";
         pw2.classList.add("hasError");
         /* Reject */
         formIsValid = false;
     }
     else{
-        divPWError.classList.add("invisible");
-        divPWError.innerHTML = "";
+        divPW2Error.classList.add("invisible");
+        divPW2Error.innerHTML = "";
         pw2.classList.remove("hasError");  
     }
     /** Adapted from https://stackoverflow.com/questions/1027224/how-can-i-test-if-a-letter-in-a-string-is-uppercase-or-lowercase-using-javascrip */
     var upper = false;
     var lower = false;
     var num = false;
-    for(let i=0; i<pw.length; i++){
-        let charcheck = pw.charAt(i);
-        if(charcheck == charcheck.toUpperCase()){
-            upper = true;
-        }
-        else if(charcheck == charcheck.toLowerCase()){
-            lower = true;
-        }
-        else if(!isNaN(character * 1)){
+    for(let i=0; i<pw.value.length; i++){
+        let charcheck = pw.value.charAt(i);
+        if(!isNaN(charcheck)){
             num = true;
         }
+        else{
+            if(charcheck == charcheck.toUpperCase()){
+                upper = true;
+            }
+            if(charcheck == charcheck.toLowerCase()){
+                lower = true;
+            }
+        }
+        
+        
     }
     if (upper && lower && num){
         divPWError.classList.add("invisible");
         divPWError.innerHTML = "";
-        pw2.classList.remove("hasError");  
+        pw.classList.remove("hasError");  
     }
     else{
         /* Show Error and Change Style of confirmpassword field */
         divPWError.classList.remove("invisible");
         divPWError.innerHTML = "Password need an at least one of each of the following: uppercase, lowercase, number.";
-        pw2.classList.add("hasError");
+        pw.classList.add("hasError");
         /* Reject */
         formIsValid = false;
     }
@@ -64,7 +69,7 @@ function validateForm(){
 
     for(let i=0; i< elements.length; i++){
         if (elements[i].classList.contains("forbiddenChar")){
-            /** Add message "Can\'t contain: <, >, #, -, {, }, (, ), \', \", `" */
+            alert("Can\'t contain: <, >, #, -, {, }, (, ), \', \", `");
         }
     }
 
