@@ -26,3 +26,7 @@ We decided to just use bootstrap because that was what we were familiar with.
 This part was solely done by Raymond Wu.
 - Part 2\
 This part was done by Joe
+There was some bugs present in the final code. 
+The red background styling would not apply to the password windows when it came
+from the passwords not matching or not having all the required character types.
+The appearing security question was implemented by Raymond Wu. 
