@@ -3,7 +3,7 @@ function validateForm(){
     var pw2 = document.querySelector("#txtSPasswordMatch");
     var divPWError = document.querySelector("#divPasswordError");
     var formIsValid = true;
-    if(pw !== pw2){
+    if(pw.value !== pw2.value){
         /* Show Error and Change Style of confirmpassword field */
         divPWError.classList.remove("invisible");
         divPWError.innerHTML = "Passwords do not match.";
@@ -20,15 +20,15 @@ function validateForm(){
     var upper = false;
     var lower = false;
     var num = false;
-    for(let i=0; i<pw.length; i++){
-        let charcheck = pw.charAt(i);
+    for(let i=0; i<pw.value.length; i++){
+        let charcheck = pw.value.charAt(i);
         if(charcheck == charcheck.toUpperCase()){
             upper = true;
         }
-        else if(charcheck == charcheck.toLowerCase()){
+        if(charcheck == charcheck.toLowerCase()){
             lower = true;
         }
-        else if(!isNaN(character * 1)){
+        if(!isNaN(charcheck)){
             num = true;
         }
     }
@@ -64,7 +64,7 @@ function validateForm(){
 
     for(let i=0; i< elements.length; i++){
         if (elements[i].classList.contains("forbiddenChar")){
-            /** Add message "Can\'t contain: <, >, #, -, {, }, (, ), \', \", `" */
+            alert("Can\'t contain: <, >, #, -, {, }, (, ), \', \", `");
         }
     }
 
