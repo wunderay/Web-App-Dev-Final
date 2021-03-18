@@ -133,3 +133,11 @@ footer{
   .btn{
       margin: 10px;
   }
+
+  .errorMessage{
+    color: rgb(139, 1, 1);
+  }
+
+  .hasError{
+    background-color:red;
+  }

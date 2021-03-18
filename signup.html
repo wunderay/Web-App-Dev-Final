@@ -18,7 +18,7 @@
         <h3>Sign Up</h3>
     </header>
     <section class="content">
-        <form method="POST">
+        <form onsubmit="return validateForm()" id="signupForm" name="signupForm" method="POST">
             <div class="form-group row">
                 <div class="col-sm-3">
                     <label for="txtFName" class="col-form-label">First Name:</label>
@@ -64,6 +64,7 @@
                     <input type="password" id="txtSPasswordMatch" name="txtSPasswordMatch" placeholder="Password"
                         class="form-control" required>
                 </div>
+                <div id="divPasswordError" class="invisible errorMessage"></div>
             </div>
 
             <div class="row">
@@ -138,7 +139,7 @@
         <a href="contactus.html">Contact Us</a><br>
         <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-
+    <script>src="js/script.js"</script>
 </body>
 
 </html>
