@@ -141,3 +141,7 @@ footer{
   .hasError{
     background-color:red;
   }
+
+  .invisible{
+    display: none;
+  }
