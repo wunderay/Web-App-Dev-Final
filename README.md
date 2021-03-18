@@ -29,4 +29,4 @@ This part was done by Joe
 There was some bugs present in the final code. 
 The red background styling would not apply to the password windows when it came
 from the passwords not matching or not having all the required character types.
-The appearing security question was implemented by Raymond Wu. 
+The appearing security question was implemented by Raymond Wu. But it doesn't seem to work.
