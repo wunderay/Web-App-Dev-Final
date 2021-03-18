@@ -74,3 +74,10 @@ function validateForm(){
 
     
 }
+
+function showSec(){
+    if(document.querySelector("#dlSecQ").value !="")
+    {
+        document.querySelector("#dlSecQ").classList.remove("invisible");
+    }
+}
