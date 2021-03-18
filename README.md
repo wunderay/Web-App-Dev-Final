@@ -22,7 +22,7 @@ Technologies Used: HTML5, CSS3, Bootstrap
 We decided to just use bootstrap because that was what we were familiar with.
 
 ## Division of Labor for Assignment 2
-- Part 1 
-    This part was solely done by Raymond Wu.
-- Part 2
-    This part was done by Joe
+- Part 1\
+This part was solely done by Raymond Wu.
+- Part 2\
+This part was done by Joe
