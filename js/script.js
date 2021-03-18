@@ -40,13 +40,13 @@ function validateForm(){
     if (upper && lower && num){
         divPWError.classList.add("invisible");
         divPWError.innerHTML = "";
-        pw2.classList.remove("hasError");  
+        pw.classList.remove("hasError");  
     }
     else{
         /* Show Error and Change Style of confirmpassword field */
         divPWError.classList.remove("invisible");
         divPWError.innerHTML = "Password need an at least one of each of the following: uppercase, lowercase, number.";
-        pw2.classList.add("hasError");
+        pw.classList.add("hasError");
         /* Reject */
         formIsValid = false;
     }
