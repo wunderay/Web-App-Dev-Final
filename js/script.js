@@ -1,4 +1,10 @@
 function validateForm(){
+    var elements = document.getElementsByTagName("input");
+    var invalidChars = ['<','>','#','-','{','}','(',')','\'','"','`'];
+    for(let i = 0; i < elements.length; i++){
+        elements[i].classList.remove("hasError");
+    }
+   
     var pw = document.querySelector("#txtSPassword");
     var pw2 = document.querySelector("#txtSPasswordMatch");
     var divPWError = document.querySelector("#divPasswordError");
@@ -51,12 +57,6 @@ function validateForm(){
         formIsValid = false;
     }
 
-
-    var elements = document.getElementsByTagName("input");
-    var invalidChars = ['<','>','#','-','{','}','(',')','\'','"','`'];
-    for(let i = 0; i < elements.length; i++){
-        elements[i].classList.remove("hasError");
-    }
     for(let i = 0; i < elements.length; i++){
         for(let j = 0; j < invalidChars.length; j++){
             if(elements[i].value.indexOf(invalidChars[j]) != -1){
