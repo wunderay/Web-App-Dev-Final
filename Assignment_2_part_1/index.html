@@ -25,12 +25,12 @@
         </div>
         <div class="col-sm-4">
           <button type="submit" class="btn btn-primary" @click="pageNum=0">Submit</button>
-          <button type="reset" class="btn btn-secondary"@click="result = null">Reset</button>
+          <button type="reset" class="btn btn-secondary" @click="result = null">Reset</button>
         </div>
       </fieldset>
     </form>
     <div id="mainDiv">
-      <div class="row col-sm-5" v-if="result != null">Found {{ (result != null)?result.totalItems:'0'}} </div>
+      <div class="row col-sm-5" v-if="result != null && result != undefined">Found {{ (result != null)?result.totalItems:'0'}} </div>
       <div class="row">
         <book-display v-if="result != null" v-for="(book, index) in result.items" :key="book.id" :book="JSON.stringify(book)"></book-display>
       </div>
